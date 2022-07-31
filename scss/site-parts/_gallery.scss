@@ -1,0 +1,70 @@
+.gallery {
+  margin-top: 240px;
+  margin-bottom: 120px;
+}
+.gallery-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #111111;
+  margin-top: 95px;
+  margin-bottom: 80px;
+  .active {
+    background: #b20005;
+    color: #fff;
+    padding: 3px 20px;
+  }
+  &__item {
+    // margin-right: 60px;
+    margin-right: 4%;
+    font-size: 15px;
+    font-weight: 400;
+    &:hover {
+      background: #b20005;
+      color: #fff;
+      padding: 3px 20px;
+      cursor: pointer;
+    }
+  }
+}
+.all-gallery {
+  display: flex;
+  justify-content: center;
+  padding: 0 46px;
+  margin-bottom: 70px;
+  img {
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
+  &__col {
+    width: 33%;
+    &_padd {
+      img {
+        padding-right: 0;
+      }
+    }
+  }
+  &__item {
+
+  }
+}
+// .all-gallery__item {
+//   display: inline-block; /* Строчно-блочный элемент */
+//   overflow: hidden; /* Скрываем всё за контуром */
+//  }
+// .all-gallery__item img {
+//   transition: 1s; /* Время эффекта */
+//   display: block; /* Убираем небольшой отступ снизу */
+//  }
+// .all-gallery__item img:hover {
+//   transform: scale(1.2); /* Увеличиваем масштаб */
+// }
+
+
+.all-gallery__item img {
+  transition: 1s; /* Время эффекта */
+ }
+ .all-gallery__item img:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+ }

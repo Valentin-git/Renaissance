@@ -1,0 +1,16 @@
+@media (max-width: 767px) {
+  .slider {
+    &__subtitle {
+      font-size: calc(10px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
+    }
+    &__title {
+      font-size: calc(30px + (90 + 90 * 0.7) * ((100vw - 320px) / 1920));
+    }
+    &__text {
+      font-size: calc(10px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
+    }
+    &__shop {
+      font-size: calc(8px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
+    }
+  }
+}

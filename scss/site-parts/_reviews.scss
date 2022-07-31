@@ -1,0 +1,58 @@
+.reviews {
+  margin-top: 281px;
+  height: 328px;
+  position: relative;
+  &::before {
+    content: '';
+    background: url(../img/reviews/quotes.png) no-repeat;
+    width: 361px;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+  }
+}
+.reviews-carousel {
+  position: relative;
+  &__btn {
+    background: url(../img/reviews/prew-nex.png);
+    width: 16px;
+    height: 28px;
+    position: absolute;
+    top: 60px;
+    cursor: pointer;
+    &_prew {
+      left: 0;
+    }
+    &_next {
+      transform: rotate(180deg);
+      right: 0;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__text {
+    color: #2e2e2e;
+    width: 55%;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+  &__name {
+    color: #b20005;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  &__profession {
+    color: #888;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
