@@ -18,7 +18,8 @@
   &__item {
     // margin-right: 60px;
     margin-right: 4%;
-    font-size: 15px;
+    // font-size: 15px;
+    font-size: calc(12px + 3 * (100vw / 1920));
     font-weight: 400;
     &:hover {
       background: #b20005;

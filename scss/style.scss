@@ -37,12 +37,14 @@ fieldset {
   align-items: center;
   &__subtitle {
     font-weight: 300;
-    font-size: 36px;
+    // font-size: 36px;
+    font-size: calc(19px + 17 * (100vw / 1920));
     text-transform: uppercase;
   }
   &__title {
     font-weight: 700;
-    font-size: 36px;
+    // font-size: 36px;
+    font-size: calc(19px + 17 * (100vw / 1920));
     text-transform: uppercase;
   }
 }
