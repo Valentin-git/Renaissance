@@ -1,5 +1,6 @@
 .gallery {
-  margin-top: 240px;
+  // margin-top: 240px;
+  margin-top: calc(60px + 180 * (100vw / 1920));
   margin-bottom: 120px;
 }
 .gallery-menu {
@@ -8,8 +9,10 @@
   align-items: center;
   flex-wrap: wrap;
   color: #111111;
-  margin-top: 95px;
-  margin-bottom: 80px;
+  // margin-top: 95px;
+  // margin-bottom: 80px;
+  margin-top: calc(30px + 50 * (100vw / 1920));
+  margin-bottom: calc(30px + 50 * (100vw / 1920));
   .active {
     background: #b20005;
     color: #fff;
@@ -33,7 +36,8 @@
   display: flex;
   justify-content: center;
   padding: 0 46px;
-  margin-bottom: 70px;
+  // margin-bottom: 70px;
+  margin-bottom: calc(30px + 40 * (100vw / 1920));
   img {
     margin-bottom: 10px;
     padding-right: 10px;
