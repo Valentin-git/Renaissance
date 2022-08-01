@@ -26,7 +26,11 @@
             </div>
             <div class="slider__right">
               <div class="slider__thumbnail">
-                <img src="./img/header/steve-johnson.jpg" alt="Steve Johnson">
+                <picture>
+                  <source media="(min-width: 799px)" srcset="./img/header/steve-johnson.jpg">
+                  <source media="(max-width: 418px)" srcset="./img/header/steve-johnson-min.jpg">
+                  <img src="./img/header/steve-johnson.jpg" alt="Steve Johnson">
+                </picture>
               </div>
               <div class="slider__block">
                 <p class="slider__text">
