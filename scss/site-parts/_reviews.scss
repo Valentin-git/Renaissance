@@ -23,11 +23,11 @@
     top: 60px;
     cursor: pointer;
     &_prew {
-      left: 0;
+      left: 90px;
     }
     &_next {
       transform: rotate(180deg);
-      right: 0;
+      right: 90px;
     }
   }
   &__item {
@@ -41,7 +41,7 @@
     width: 55%;
     margin-bottom: 40px;
     // font-size: 18px;
-    font-size: calc(12px + 6 * (100vw / 1920));
+    font-size: calc(14px + 4 * (100vw / 1920));
     font-weight: 400;
     text-align: center;
   }

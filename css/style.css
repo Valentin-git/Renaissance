@@ -312,12 +312,12 @@ fieldset {
 }
 
 .reviews-carousel__btn_prew {
-  left: 0;
+  left: 90px;
 }
 
 .reviews-carousel__btn_next {
   transform: rotate(180deg);
-  right: 0;
+  right: 90px;
 }
 
 .reviews-carousel__item {
@@ -331,7 +331,7 @@ fieldset {
   color: #2e2e2e;
   width: 55%;
   margin-bottom: 40px;
-  font-size: calc(12px + 6 * (100vw / 1920));
+  font-size: calc(14px + 4 * (100vw / 1920));
   font-weight: 400;
   text-align: center;
 }
@@ -678,7 +678,13 @@ fieldset {
     font-size: calc(12px + (6 + 6 * 0.7) * ((100vw - 320px) / 1920));
   }
   .reviews-carousel__text {
-    font-size: calc(12px + (6 + 6 * 0.7) * ((100vw - 320px) / 1920));
+    font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 1920));
+  }
+  .reviews-carousel__btn_prew {
+    left: 40px;
+  }
+  .reviews-carousel__btn_next {
+    right: 40px;
   }
   .gallery {
     margin-top: calc(60px + (120 + 120 * 0.7) * ((100vw - 320px) / 1920));
@@ -735,6 +741,18 @@ fieldset {
   .general-heading {
     letter-spacing: 10px;
     text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .reviews-carousel__btn_prew {
+    left: 20px;
+  }
+  .reviews-carousel__btn_next {
+    right: 20px;
+  }
+  .reviews-carousel__text {
+    width: 80%;
   }
 }
 

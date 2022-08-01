@@ -92,7 +92,15 @@
   }
   .reviews-carousel {
     &__text {
-      font-size: calc(12px + (6 + 6 * 0.7) * ((100vw - 320px) / 1920));
+      font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 1920));
+    }
+    &__btn {
+      &_prew {
+        left: 40px;
+      }
+      &_next {
+        right: 40px;
+      }
     }
   }
   .gallery {
@@ -153,6 +161,21 @@
   .general-heading {
     letter-spacing: 10px;
     text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .reviews-carousel {
+    &__btn {
+      &_prew {
+        left: 20px;
+      }
+      &_next {
+        right: 20px;
+      }
+    }
+    &__text {
+      width: 80%;
+    }
   }
 }
 
