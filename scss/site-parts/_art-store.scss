@@ -18,14 +18,16 @@
 }
 .art-store-photo {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 74px;
   margin-bottom: 87px;
   &__item {
     width: 25%;
-    margin-right: 20px;
-    &:last-child {
-      margin-right: 0;
-    }
+    padding: 0 10px;
+  //   margin-right: 20px;
+  //   &:last-child {
+  //     margin-right: 0;
+  //   }
   }
   &__img {
     margin-bottom: 33px;
@@ -35,7 +37,8 @@
   }
   &__title {
     color: #111;
-    font-size: 22px;
+    // font-size: 22px;
+    font-size: calc(15px + 7 * (100vw / 1920));
     font-weight: 700;
   }
   &__price {
