@@ -1,6 +1,7 @@
 .art-store {
   position: relative;
-  margin-bottom: 200px;
+  // margin-bottom: 200px;
+  margin-bottom: calc(60px + 140 * (100vw / 1920));
   &::after {
     content: '';
     background: url(../img/art-store/art-store.png) no-repeat;
@@ -44,7 +45,8 @@
   &__price {
     color: #b20005;
     padding-top: 7px;
-    font-size: 30px;
+    // font-size: 30px;
+    font-size: calc(20px + 10 * (100vw / 1920));
     font-weight: 300;
   }
 }

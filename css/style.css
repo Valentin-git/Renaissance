@@ -331,7 +331,7 @@ fieldset {
   color: #2e2e2e;
   width: 55%;
   margin-bottom: 40px;
-  font-size: 18px;
+  font-size: calc(12px + 6 * (100vw / 1920));
   font-weight: 400;
   text-align: center;
 }
@@ -351,7 +351,7 @@ fieldset {
 
 .art-store {
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: calc(60px + 140 * (100vw / 1920));
 }
 
 .art-store::after {
@@ -399,13 +399,13 @@ fieldset {
 .art-store-photo__price {
   color: #b20005;
   padding-top: 7px;
-  font-size: 30px;
+  font-size: calc(20px + 10 * (100vw / 1920));
   font-weight: 300;
 }
 
 .related-news-row {
   display: flex;
-  margin-top: 90px;
+  margin-top: calc(50px + 40 * (100vw / 1920));
   margin-bottom: 150px;
 }
 
@@ -486,9 +486,9 @@ fieldset {
 }
 
 .contact-form__input {
-  width: 365px;
-  height: 70px;
-  margin-right: 20px;
+  width: 47.72%;
+  max-height: 70px;
+  margin: 0 10px;
   padding: 30px;
   color: #717171;
   font-style: italic;
@@ -502,8 +502,9 @@ fieldset {
 }
 
 .contact-form__textarea {
-  width: 750px;
-  height: 250px;
+  width: 98%;
+  max-height: 250px;
+  margin: 0 10px;
   padding: 30px;
   color: #717171;
   font-style: italic;
@@ -607,6 +608,12 @@ fieldset {
   }
 }
 
+@media (max-width: 991px) {
+  .art-store-photo__img {
+    margin-bottom: 15px;
+  }
+}
+
 @media (max-width: 885px) {
   .exhibition-video {
     flex-direction: column;
@@ -670,6 +677,9 @@ fieldset {
   .exhibition-video__text {
     font-size: calc(12px + (6 + 6 * 0.7) * ((100vw - 320px) / 1920));
   }
+  .reviews-carousel__text {
+    font-size: calc(12px + (6 + 6 * 0.7) * ((100vw - 320px) / 1920));
+  }
   .gallery {
     margin-top: calc(60px + (120 + 120 * 0.7) * ((100vw - 320px) / 1920));
   }
@@ -681,11 +691,18 @@ fieldset {
     width: 50%;
     flex: 0 0 auto;
   }
+  .art-store-photo__content {
+    margin-bottom: 20px;
+  }
   .art-store-photo__title {
     font-size: calc(15px + (7 + 7 * 0.7) * ((100vw - 320px) / 1920));
   }
+  .art-store-photo__price {
+    font-size: calc(20px + (10 + 10 * 0.7) * ((100vw - 320px) / 1920));
+  }
   .related-news-row {
     flex-wrap: wrap;
+    margin-top: calc(50px + (40 + 40 * 0.7) * ((100vw - 320px) / 1920));
   }
   .related-news-row__item {
     width: 100%;
@@ -701,6 +718,16 @@ fieldset {
   }
   .related-news-row__text {
     font-size: calc(10px + (6 + 6 * 0.7) * ((100vw - 320px) / 1920));
+  }
+  .art-store {
+    margin-bottom: calc(60px + (180 + 180 * 0.7) * ((100vw - 320px) / 1920));
+  }
+  .footer-top__inner {
+    flex-wrap: wrap;
+  }
+  .footer-top__item {
+    width: 100%;
+    flex: 0 0 auto;
   }
 }
 

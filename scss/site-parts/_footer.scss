@@ -35,9 +35,12 @@
   }
   &__input {
     // width: 50%;
-    width: 365px;
-    height: 70px;
-    margin-right: 20px;
+    // width: 365px;
+    // height: 70px;
+    width: 47.72%;
+    max-height: 70px;
+    // margin-right: 20px;
+    margin: 0 10px;
     padding: 30px;
     color: #717171;
     font-style: italic;
@@ -50,8 +53,11 @@
   }
   &__textarea {
     // width: 100%;
-    width: 750px;
-    height: 250px;
+    // width: 750px;
+    // height: 250px;
+    width: 98%;
+    max-height: 250px;
+    margin: 0 10px;
     padding: 30px;
     color: #717171;
     font-style: italic;

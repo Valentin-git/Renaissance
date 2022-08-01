@@ -1,6 +1,7 @@
 .related-news-row {
   display: flex;
-  margin-top: 90px;
+  // margin-top: 90px;
+  margin-top: calc(50px + 40 * (100vw / 1920));
   margin-bottom: 150px;
   &__item {
     width: 50%;
