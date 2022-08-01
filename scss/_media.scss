@@ -60,6 +60,14 @@
       font-size: calc(19px + (17 + 17 * 0.7) * ((100vw - 320px) / 1920));
     }
   }
+  .general-button {
+    &__link {
+      padding-top: calc(11px + (9 + 9 * 0.7) * ((100vw - 320px) / 1920));
+      padding-bottom: calc(11px + (9 + 9 * 0.7) * ((100vw - 320px) / 1920));
+      padding-left: calc(18px + (29 + 29 * 0.7) * ((100vw - 320px) / 1920));
+      padding-right: calc(18px + (29 + 29 * 0.7) * ((100vw - 320px) / 1920));
+    }
+  }
   .all-gallery {
     padding: 0 10px;
     &__item {
