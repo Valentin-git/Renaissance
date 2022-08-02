@@ -35,6 +35,10 @@ fieldset {
   max-width: 1530px;
 }
 
+.container_pos {
+  position: relative;
+}
+
 .general-heading {
   letter-spacing: 15px;
   display: flex;
@@ -91,6 +95,30 @@ fieldset {
   position: absolute;
   top: 18.7%;
   left: 0;
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 8%;
+  left: 12px;
+  z-index: 111;
+}
+
+.logo__link {
+  color: #b20005;
+  font-size: calc(15px + 15 * (100vw / 1920));
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__item {
+  padding: 0 35px;
 }
 
 .slider__content {
@@ -596,6 +624,15 @@ fieldset {
   margin-right: 0;
 }
 
+@media (max-width: 1500px) {
+  .header::before {
+    top: 28.2%;
+  }
+  .slider__content {
+    top: 27.7%;
+  }
+}
+
 @media (max-width: 1200px) {
   .exhibition-video__col {
     width: 25%;
@@ -652,6 +689,15 @@ fieldset {
 }
 
 @media (max-width: 767px) {
+  .header::before {
+    top: 27.2%;
+  }
+  .slider__content {
+    top: 37%;
+  }
+  .logo__link {
+    font-size: calc(15px + (15 + 15 * 0.7) * ((100vw - 320px) / 1920));
+  }
   .slider__subtitle {
     font-size: calc(10px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
   }
@@ -764,6 +810,12 @@ fieldset {
 }
 
 @media (max-width: 576px) {
+  .header::before {
+    top: 26.2%;
+  }
+  .slider__content {
+    top: 36%;
+  }
   .reviews-carousel__btn_prew {
     left: 20px;
   }
@@ -795,6 +847,15 @@ fieldset {
   .art-store-photo__img {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 418px) {
+  .header::before {
+    top: 25%;
+  }
+  .slider__content {
+    top: 33%;
   }
 }
 /*# sourceMappingURL=style.css.map */

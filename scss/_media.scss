@@ -1,4 +1,17 @@
-
+//------------------------------- MAX-WIDTH 1500 ---------------------//
+@media (max-width: 1500px) { 
+  .header {
+    &::before {
+      top: 28.2%;
+    }  
+  }
+  .slider {
+    &__content {
+      top: 27.7%;
+    }
+  }
+}
+//------------------------------- MAX-WIDTH 1200 desktops ---------------------//
 @media (max-width: 1200px) {
   .exhibition-video {
     &__col {
@@ -12,6 +25,7 @@
     }
   }
 }
+//------------------------------- MAX-WIDTH 1150 ---------------------//
 @media (max-width: 1150px) {
   .slider {
     &__block {
@@ -19,6 +33,7 @@
     }
   }
 }
+//------------------------------- MAX-WIDTH 991 tablets ---------------------//
 @media (max-width: 991px) {
   .slider {
     &__block {
@@ -31,6 +46,7 @@
     }
   }
 }
+//------------------------------- MAX-WIDTH 885 ---------------------//
 @media (max-width: 885px) {
   .slider {
     &__block {
@@ -60,8 +76,23 @@
     }
   }
 }
-
+//------------------------------- MAX-WIDTH 767 landscape phones ---------------------//
 @media (max-width: 767px) {
+  .header {
+    &::before {
+      top: 27.2%;
+    }  
+  }
+  .slider {
+    &__content {
+      top: 37%;
+    }
+  }
+  .logo {
+    &__link {
+      font-size: calc(15px + (15 + 15 * 0.7) * ((100vw - 320px) / 1920));
+    }
+  }
   .slider {
     &__subtitle {
       font-size: calc(10px + (8 + 8 * 0.7) * ((100vw - 320px) / 1920));
@@ -191,7 +222,18 @@
     text-align: center;
   }
 }
+//------------------------------- MAX-WIDTH 576 portrait phones ---------------------//
 @media (max-width: 576px) {
+  .header {
+    &::before {
+      top: 26.2%;
+    }  
+  }
+  .slider {
+    &__content {
+      top: 36%;
+    }
+  }
   .reviews-carousel {
     &__btn {
       &_prew {
@@ -206,7 +248,7 @@
     }
   }
 }
-
+//------------------------------- MAX-WIDTH 500 ---------------------//
 @media (max-width: 500px) {
   .exhibition-video {
     margin-top: 50px;
@@ -231,6 +273,16 @@
     }
   }
 }
+//------------------------------- MAX-WIDTH 418 ---------------------//
 @media (max-width: 418px) {
-
+  .header {
+    &::before {
+      top: 25%;
+    }  
+  }
+  .slider {
+    &__content {
+      top: 33%;
+    }
+  }
 }
