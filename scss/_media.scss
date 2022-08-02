@@ -198,8 +198,9 @@
     }
   }
   .reviews {
+    margin-top: calc(151px + (131 + 131 * 0.7) * ((100vw - 320px) / 1920));
     &::before {
-      top: 25%;
+      top: 27%;
     }
   }
   .reviews-carousel {

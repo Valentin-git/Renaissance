@@ -340,7 +340,7 @@ fieldset {
 }
 
 .reviews {
-  margin-top: 281px;
+  margin-top: calc(150px + 131 * (100vw / 1920));
   height: 328px;
   position: relative;
 }
@@ -815,8 +815,11 @@ fieldset {
   .exhibition-video__text {
     font-size: calc(12px + (6 + 6 * 0.7) * ((100vw - 320px) / 1920));
   }
+  .reviews {
+    margin-top: calc(151px + (131 + 131 * 0.7) * ((100vw - 320px) / 1920));
+  }
   .reviews::before {
-    top: 25%;
+    top: 27%;
   }
   .reviews-carousel__text {
     font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 1920));

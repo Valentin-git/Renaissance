@@ -1,5 +1,6 @@
 .reviews {
-  margin-top: 281px;
+  // margin-top: 281px;
+  margin-top: calc(150px + 131 * (100vw / 1920));
   height: 328px;
   position: relative;
   &::before {
