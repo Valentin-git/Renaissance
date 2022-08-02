@@ -18,7 +18,7 @@
   position: absolute;
   top: 8%;
   // left: 12px;
-  right: 10px;
+  right: 13px;
   z-index: 111;
 }
 .logo {
@@ -37,8 +37,16 @@
 .menu {
   display: flex;
   align-items: center;
+  background: rgba(0,0,0, .5);
+  padding: 15px 30px;
   &__item {
-    padding: 0 35px;
+    // padding: 0 35px;
+    padding-right: 65px;
+    line-height: 0;
+    cursor: pointer;
+    &:last-child {
+      padding-right: 0;
+    }
   }
   svg {
     width: 22px;
@@ -46,6 +54,10 @@
   }
   path {
     fill: #ffffff;
+    &:hover {
+      fill: #b20005;
+      transition: .8s;
+    }
   }
 }
 .slider {

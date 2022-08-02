@@ -102,7 +102,7 @@ fieldset {
   align-items: center;
   position: absolute;
   top: 8%;
-  right: 10px;
+  right: 13px;
   z-index: 111;
 }
 
@@ -123,10 +123,18 @@ fieldset {
 .menu {
   display: flex;
   align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 30px;
 }
 
 .menu__item {
-  padding: 0 35px;
+  padding-right: 65px;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
 }
 
 .menu svg {
@@ -136,6 +144,11 @@ fieldset {
 
 .menu path {
   fill: #ffffff;
+}
+
+.menu path:hover {
+  fill: #b20005;
+  transition: .8s;
 }
 
 .slider__content {
@@ -700,7 +713,7 @@ fieldset {
 
 @media (max-width: 991px) {
   .menu__item {
-    padding: 0 20px;
+    padding-right: 40px;
   }
   .slider__block {
     padding: 20px;
@@ -711,6 +724,9 @@ fieldset {
 }
 
 @media (max-width: 885px) {
+  .menu {
+    padding: 12px 20px;
+  }
   .slider__block {
     padding: 15px;
   }
@@ -741,6 +757,7 @@ fieldset {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    text-align: center;
   }
   .footer-botton__item:last-child {
     margin-bottom: 0;
@@ -897,8 +914,11 @@ fieldset {
   .header::before {
     top: 26.2%;
   }
+  .menu {
+    padding: 10px 15px;
+  }
   .menu__item {
-    padding: 0 10px;
+    padding-right: 20px;
   }
   .slider__content {
     top: 36%;
@@ -915,6 +935,9 @@ fieldset {
 }
 
 @media (max-width: 500px) {
+  .menu svg {
+    width: 15px;
+  }
   .exhibition-video {
     margin-top: 50px;
   }

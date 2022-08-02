@@ -70,7 +70,7 @@
 @media (max-width: 991px) {
   .menu {
     &__item {
-      padding: 0 20px;
+      padding-right: 40px;
     }
   }
   .slider {
@@ -86,6 +86,9 @@
 }
 //------------------------------- MAX-WIDTH 885 ---------------------//
 @media (max-width: 885px) {
+  .menu {
+    padding: 12px 20px;
+  }
   .slider {
     &__block {
       padding: 15px;
@@ -119,6 +122,7 @@
       display: flex;
       justify-content: center;
       margin-bottom: 20px;
+      text-align: center;
       &:last-child {
         margin-bottom: 0;
       }
@@ -308,8 +312,9 @@
     }  
   }
   .menu {
+    padding: 10px 15px;
     &__item {
-      padding: 0 10px;
+      padding-right: 20px;
     }
   }
   .slider {
@@ -333,6 +338,11 @@
 }
 //------------------------------- MAX-WIDTH 500 ---------------------//
 @media (max-width: 500px) {
+  .menu {
+    svg {
+      width: 15px;
+    }
+  }
   .exhibition-video {
     margin-top: 50px;
     &__col {
