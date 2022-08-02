@@ -35,6 +35,11 @@
 }
 //------------------------------- MAX-WIDTH 991 tablets ---------------------//
 @media (max-width: 991px) {
+  .menu {
+    &__item {
+      padding: 0 20px;
+    }
+  }
   .slider {
     &__block {
       padding: 20px;
@@ -228,6 +233,11 @@
     &::before {
       top: 26.2%;
     }  
+  }
+  .menu {
+    &__item {
+      padding: 0 10px;
+    }
   }
   .slider {
     &__content {

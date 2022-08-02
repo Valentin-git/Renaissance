@@ -17,10 +17,15 @@
   align-items: center;
   position: absolute;
   top: 8%;
-  left: 12px;
+  // left: 12px;
+  right: 0;
   z-index: 111;
 }
 .logo {
+  position: absolute;
+  top: 8%;
+  left: 12px;
+  z-index: 111;
   &__link {
     color: #b20005;
     // font-size: 30px;
@@ -31,8 +36,16 @@
 }
 .menu {
   display: flex;
+  align-items: center;
   &__item {
     padding: 0 35px;
+  }
+  svg {
+    width: 22px;
+    height: auto;
+  }
+  path {
+    fill: #ffffff;
   }
 }
 .slider {

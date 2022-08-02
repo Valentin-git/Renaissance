@@ -102,6 +102,13 @@ fieldset {
   align-items: center;
   position: absolute;
   top: 8%;
+  right: 0;
+  z-index: 111;
+}
+
+.logo {
+  position: absolute;
+  top: 8%;
   left: 12px;
   z-index: 111;
 }
@@ -115,10 +122,20 @@ fieldset {
 
 .menu {
   display: flex;
+  align-items: center;
 }
 
 .menu__item {
   padding: 0 35px;
+}
+
+.menu svg {
+  width: 22px;
+  height: auto;
+}
+
+.menu path {
+  fill: #ffffff;
 }
 
 .slider__content {
@@ -652,6 +669,9 @@ fieldset {
 }
 
 @media (max-width: 991px) {
+  .menu__item {
+    padding: 0 20px;
+  }
   .slider__block {
     padding: 20px;
   }
@@ -812,6 +832,9 @@ fieldset {
 @media (max-width: 576px) {
   .header::before {
     top: 26.2%;
+  }
+  .menu__item {
+    padding: 0 10px;
   }
   .slider__content {
     top: 36%;
