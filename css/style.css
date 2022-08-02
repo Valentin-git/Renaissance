@@ -102,7 +102,7 @@ fieldset {
   align-items: center;
   position: absolute;
   top: 8%;
-  right: 0;
+  right: 10px;
   z-index: 111;
 }
 
@@ -626,6 +626,7 @@ fieldset {
 .footer-botton__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-botton__text {
@@ -734,6 +735,15 @@ fieldset {
   }
   .exhibition-video__item {
     padding: 0 15px;
+  }
+  .footer-botton__item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .footer-botton__item:last-child {
+    margin-bottom: 0;
   }
 }
 

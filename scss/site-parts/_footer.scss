@@ -133,6 +133,7 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__text {
     color: #949494;
