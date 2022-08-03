@@ -70,7 +70,7 @@
 @media (max-width: 991px) {
   .menu {
     &__item {
-      padding-right: 40px;
+      // padding-right: 40px;
     }
   }
   .slider {
@@ -87,7 +87,7 @@
 //------------------------------- MAX-WIDTH 885 ---------------------//
 @media (max-width: 885px) {
   .menu {
-    padding: 12px 20px;
+    // padding: 12px 20px;
   }
   .slider {
     &__block {
@@ -313,9 +313,9 @@
     }  
   }
   .menu {
-    padding: 10px 15px;
+    // padding: 10px 15px;
     &__item {
-      padding-right: 20px;
+      // padding-right: 20px;
     }
   }
   .slider {
@@ -378,5 +378,25 @@
     &__content {
       top: 33%;
     }
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
   }
 }
