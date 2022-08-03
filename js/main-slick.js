@@ -27,3 +27,15 @@ $('.reviews-carousel').slick({
   //   }
   // ]
 });
+
+$('.slider').slick({
+  // centerMode: true,
+  // centerPadding: '60px',
+  arrows: false,
+  slidesToShow: 1,
+  speed: 900,
+  easing: 'ease',
+  dots: true,
+  vertical: true,
+  // autoplay: true,
+});
