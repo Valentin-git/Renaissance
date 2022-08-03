@@ -135,6 +135,15 @@ fieldset {
   border: 1px solid #fff;
 }
 
+.slider__thumbnail {
+  transform: scale(0);
+  transition: all 3s ease 0s;
+}
+
+.slider .active {
+  transform: scale(1);
+}
+
 .header {
   position: relative;
 }
@@ -874,6 +883,9 @@ fieldset {
   .gallery-menu {
     margin-top: calc(30px + (50 + 50 * 0.7) * ((100vw - 320px) / 1920));
     margin-bottom: calc(30px + (50 + 50 * 0.7) * ((100vw - 320px) / 1920));
+  }
+  .art-store::after {
+    top: 127px;
   }
   .art-store-photo__item {
     width: 50%;

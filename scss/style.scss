@@ -139,6 +139,17 @@ fieldset {
   }
 }
 
+.slider {
+  &__thumbnail {
+    transform: scale(0);
+    transition: all 3s ease 0s;
+  }
+  .active {
+    transform: scale(1);
+  }
+  
+}
+
 @import 'site-parts/header';
 @import 'site-parts/gallery';
 @import 'site-parts/exhibition';

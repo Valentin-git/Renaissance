@@ -227,6 +227,11 @@
     margin-top: calc(30px + (50 + 50 * 0.7) * ((100vw - 320px) / 1920));
     margin-bottom: calc(30px + (50 + 50 * 0.7) * ((100vw - 320px) / 1920));
   }
+  .art-store {
+    &::after {
+      top: 127px;
+    }
+  }
   .art-store-photo {
     &__item {
       width: 50%;
