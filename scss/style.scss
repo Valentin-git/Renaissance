@@ -49,7 +49,26 @@ fieldset {
   margin-right: auto;
   margin-left: auto;
 }
-
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -115,7 +134,7 @@ fieldset {
     &:hover {
       color: #fff;
       background: #b20005;
-      border: 0;
+      border: 1px solid #fff;
     }
   }
 }

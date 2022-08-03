@@ -16,23 +16,24 @@
 }
 .reviews-carousel {
   position: relative;
-  &__btn {
+  .slick-arrow {
     background: url(../img/reviews/prew-nex.png);
     width: 16px;
     height: 28px;
     position: absolute;
     top: 60px;
+    font-size: 0;
     cursor: pointer;
-    &_prew {
-      left: 90px;
-    }
-    &_next {
-      transform: rotate(180deg);
-      right: 90px;
-    }
+  }
+  .slick-prev {
+    left: 90px;
+  }
+  .slick-next {
+    transform: rotate(180deg);
+    right: 90px;
   }
   &__item {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;

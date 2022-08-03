@@ -207,17 +207,21 @@
     &__text {
       font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 1920));
     }
-    &__btn {
-      &_prew {
-        left: 40px;
-      }
-      &_next {
-        right: 40px;
-      }
+    // &__btn {
+      
+    // }
+    .slick-prev {
+      left: 40px;
+    }
+    .slick-next {
+      right: 40px;
     }
   }
   .gallery {
     margin-top: calc(60px + (120 + 120 * 0.7) * ((100vw - 320px) / 1920));
+    &__item {
+      margin-right: calc(0px + (25 + 25 * 0.7) * ((100vw - 320px) / 1920));
+    }
   }
   .gallery-menu {
     margin-top: calc(30px + (50 + 50 * 0.7) * ((100vw - 320px) / 1920));
@@ -324,13 +328,14 @@
     }
   }
   .reviews-carousel {
-    &__btn {
-      &_prew {
-        left: 20px;
-      }
-      &_next {
-        right: 20px;
-      }
+    .slick-arrow {
+      
+    }
+    .slick-prev {
+      left: 20px;
+    }
+    .slick-next {
+      right: 20px;
     }
     &__text {
       width: 80%;
@@ -378,25 +383,5 @@
     &__content {
       top: 33%;
     }
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
   }
 }
