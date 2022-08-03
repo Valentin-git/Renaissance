@@ -138,17 +138,25 @@ fieldset {
     }
   }
 }
+// .slider__thumbnail {
+//   animation: 5s show ease;
+// }
 
-.slider {
-  &__thumbnail {
-    transform: scale(0);
-    transition: all 3s ease 0s;
-  }
-  .active {
-    transform: scale(1);
-  }
+// @keyframes show {
+//   from { opacity: 0; }
+//   to { opacity: 1; }
+// }
+
+// .slider {
+//   &__thumbnail {
+//     transform: scale(0);
+//     transition: all 3s ease 0s;
+//   }
+//   .active {
+//     transform: scale(1);
+//   }
   
-}
+// }
 
 @import 'site-parts/header';
 @import 'site-parts/gallery';

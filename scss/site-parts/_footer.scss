@@ -75,19 +75,29 @@
   &__btn {
     color: #fff;
     background: #b20005;
-    // padding: 24px 55px;
     padding-left: calc(18px + 29 * (100vw / 1920));
     padding-right: calc(18px + 29 * (100vw / 1920));
     padding-top: calc(11px + 9 * (100vw / 1920));
     padding-bottom: calc(11px + 9 * (100vw / 1920));
     margin-top: 14px;
-    // margin-left: 10px;
-    // margin-right: 10px;
     font-size: 16px;
     font-weight: 400;
     border-radius: 7px;
+    cursor: pointer;
     text-transform: uppercase;
+    animation: animate_btn 2s infinite;
   }
+}
+@keyframes animate_btn {
+	0% {
+		box-shadow: 0 0 0 0 rgba(228, 25, 49, 0.4);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgba(228, 25, 49, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(228, 25, 49, 0);
+	}
 }
 .contacts {
   &__item {
