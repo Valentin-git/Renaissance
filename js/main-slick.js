@@ -37,5 +37,5 @@ $('.slider').slick({
   easing: 'ease',
   dots: true,
   vertical: true,
-  // autoplay: true,
+  autoplay: true,
 });
