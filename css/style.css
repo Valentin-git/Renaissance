@@ -1134,6 +1134,9 @@ fieldset {
   .menu__item {
     padding-bottom: 5px;
   }
+  .menu svg {
+    width: 20px;
+  }
   .exhibition-video {
     margin-top: 50px;
   }
@@ -1145,6 +1148,9 @@ fieldset {
     margin-top: 20px;
   }
   .exhibition-video__item {
+    margin-bottom: 20px;
+  }
+  .exhibition-video__item:nth-child(2) {
     margin-bottom: 20px;
   }
   .art-store-photo__item {
