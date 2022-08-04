@@ -17,8 +17,7 @@
   align-items: center;
   position: absolute;
   top: 8%;
-  // left: 12px;
-  right: 43px;
+  right: -64px;
   z-index: 111;
 }
 .logo {
@@ -35,7 +34,7 @@
   }
 }
 .menu-hamb {
-  // margin-right: 20px;
+  display: none;
   cursor: pointer;
   svg {
     width: 40px;
@@ -55,15 +54,24 @@
   // background: rgba(0,0,0, .5);
   // padding: 15px;
   &__item {
+    padding-bottom: 35px;
     // padding: 0 35px;
     // padding-right: 65px;
     // line-height: 0;
-    // cursor: pointer;
-    // &:last-child {
-    //   padding-right: 0;
-    // }
+    cursor: pointer;
+    &:last-child {
+      padding-bottom: 0;
+    }
   }
-  
+  svg {
+    width: 22px;
+    height: 22px;
+    path {
+      &:hover {
+        fill: #b20005;
+      }
+    }
+  }  
 }
 .slider {
   &__content {

@@ -127,6 +127,7 @@ fieldset {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+  transition: all .5s ease 0s;
 }
 
 .general-button__link:hover {
@@ -155,7 +156,7 @@ fieldset {
   align-items: center;
   position: absolute;
   top: 8%;
-  right: 43px;
+  right: -64px;
   z-index: 111;
 }
 
@@ -174,6 +175,7 @@ fieldset {
 }
 
 .menu-hamb {
+  display: none;
   cursor: pointer;
 }
 
@@ -189,6 +191,24 @@ fieldset {
 .menu-hamb path:hover {
   fill: #b20005;
   transition: .8s;
+}
+
+.menu__item {
+  padding-bottom: 35px;
+  cursor: pointer;
+}
+
+.menu__item:last-child {
+  padding-bottom: 0;
+}
+
+.menu svg {
+  width: 22px;
+  height: 22px;
+}
+
+.menu svg path:hover {
+  fill: #b20005;
 }
 
 .slider__content {
@@ -337,12 +357,6 @@ fieldset {
   margin-bottom: calc(30px + 50 * (100vw / 1920));
 }
 
-.gallery-menu .active {
-  background: #b20005;
-  color: #fff;
-  padding: 3px 20px;
-}
-
 .gallery-menu__item {
   margin-right: calc(0px + 25 * (100vw / 1920));
   padding: 3px 20px;
@@ -354,6 +368,13 @@ fieldset {
   background: #b20005;
   color: #fff;
   cursor: pointer;
+  transition: all .5s ease 0s;
+}
+
+.gallery-menu__item_active {
+  background: #b20005;
+  color: #fff;
+  padding: 3px 20px;
 }
 
 .all-gallery {
@@ -533,6 +554,35 @@ fieldset {
 
 .art-store-photo__img {
   margin-bottom: 33px;
+  position: relative;
+}
+
+.art-store-photo__img:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.art-store-photo__img:hover .overlay__link {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.art-store-photo .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background 0.5s ease;
+}
+
+.art-store-photo .overlay__link {
+  opacity: 0;
 }
 
 .art-store-photo__content {
