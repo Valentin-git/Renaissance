@@ -1,4 +1,22 @@
-
+@media (max-width: 1700px) {
+  .menu-nav {
+    right: -27px; 
+  }
+  .slider .slick-dots {
+    right: -45px;
+  }
+}
+@media (max-width: 1600px) {
+  .menu-nav {
+    right: 35px;
+  }
+  .menu path {
+    fill: #fff;
+  }
+  .slider .slick-dots {
+    right: 17px;
+  }
+}
 @media (max-width: 1570px) {
   .footer-top {
     &__inner {
@@ -70,12 +88,15 @@
 @media (max-width: 991px) {
   .menu {
     &__item {
-      // padding-right: 40px;
+      padding-bottom: 15px;
     }
   }
   .slider {
     &__block {
       padding: 20px;
+    }
+    .slick-dots  {
+      display: none !important;
     }
   }
   .art-store-photo {
@@ -207,9 +228,6 @@
     &__text {
       font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / 1920));
     }
-    // &__btn {
-      
-    // }
     .slick-prev {
       left: 40px;
     }
@@ -349,7 +367,13 @@
 }
 //------------------------------- MAX-WIDTH 500 ---------------------//
 @media (max-width: 500px) {
+  .menu-nav {
+    right: 20px;
+  }
   .menu {
+    &__item {
+      padding-bottom: 5px;
+    }
     svg {
       width: 15px;
     }

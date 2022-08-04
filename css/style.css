@@ -829,6 +829,27 @@ fieldset {
   margin-right: 0;
 }
 
+@media (max-width: 1700px) {
+  .menu-nav {
+    right: -27px;
+  }
+  .slider .slick-dots {
+    right: -45px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .menu-nav {
+    right: 35px;
+  }
+  .menu path {
+    fill: #fff;
+  }
+  .slider .slick-dots {
+    right: 17px;
+  }
+}
+
 @media (max-width: 1570px) {
   .footer-top__inner {
     padding: 264px 20px;
@@ -881,8 +902,14 @@ fieldset {
 }
 
 @media (max-width: 991px) {
+  .menu__item {
+    padding-bottom: 15px;
+  }
   .slider__block {
     padding: 20px;
+  }
+  .slider .slick-dots {
+    display: none !important;
   }
   .art-store-photo__img {
     margin-bottom: 15px;
@@ -1101,6 +1128,12 @@ fieldset {
 }
 
 @media (max-width: 500px) {
+  .menu-nav {
+    right: 20px;
+  }
+  .menu__item {
+    padding-bottom: 5px;
+  }
   .menu svg {
     width: 15px;
   }
