@@ -564,11 +564,6 @@ fieldset {
 
 .art-store-photo__img:hover .overlay__link {
   opacity: 1;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #fff;
 }
 
@@ -583,6 +578,13 @@ fieldset {
 
 .art-store-photo .overlay__link {
   opacity: 0;
+  background: #b20005;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .art-store-photo__content {
